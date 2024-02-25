@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artify</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/0d5bf31d10.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    
+    <header>
+      <nav class="nav1">
+
+        <div class="logo">
+          <img src="/images/artify-color.png" alt="logo_image">
+        </div>
+
+        <ul>
+          <li class="active"><a href="/artify/src/index.html">Home</a></li>
+          <li><a href="/artify/src/about.html">About</a></li>
+          <li><a href="/artify/src/contact.html">Contact</a></li>
+        </ul>
+
+        <div class="icons">
+          <div class="wishlist-icon" onclick="toggleWishlist()">
+            <i class="fas fa-heart"></i>
+            <span class="wishlist-count" id="wishlist-count">0</span>
+          </div>
+
+          <div class="search">
+            <i class="fas fa-search" id="search-icon"></i>
+            <input type="text" id="search-input" placeholder="Search" class="hidden">
+          </div>
+        </div>
+
+     </nav>
+    </header>
+
+    <div id="main" class="page-container">
+      
+      <div class="container">
+        <span class="slider" id="slider1"></span>
+        <span class="slider" id="slider2"></span>
+        <span class="slider" id="slider3"></span>
+        <span class="slider" id="slider4"></span>
+        <span class="slider" id="slider5"></span>
+      </div>
+
+      <div class="imgContainer">
+
+        <div class="slide" id="slide1">
+          <img src="/images/a15.jpg" alt="image1" id="img1"> 
+          <a href="#slider1" class="button" id="button1"></a>
+        </div>
+
+        <div class="slide" id="slide2">
+          <img src="/images/c14.jpg" alt="image2" id="img2">
+          <a href="#slider2" class="button" id="button2"></a>
+        </div>
+
+        <div class="slide" id="slide3">
+          <img src="/images/d1.jpg" alt="image3" id="img3">
+          <a href="#slider3" class="button" id="button3"></a>
+        </div>
+
+        <div class="slide" id="slide4">
+          <img src="/images/p4.jpg" alt="image4" id="img4">
+          <a href="#slider4" class="button" id="button4"></a>
+        </div>
+
+        <div class="slide" id="slide5">
+          <img src="/images/m1.jpg" alt="image5" id="img5">
+          <a href="#slider5" class="button" id="button5"></a>
+        </div>
+
+      </div>
+
+      <hr>
+      <nav class="nav2">
+
+        <ul>
+          <li><a href="/artify/src/abstract.html">Abstract art</a></li>
+          <li><a href="/artify/src/pop.html">Pop art</a></li>
+          <li><a href="/artify/src/digital.html">Digital art</a></li>
+          <li><a href="/artify/src/cubism.html">Cubism art</a></li>
+          <li><a href="/artify/src/minimalism.html">Minimalism art</a></li>
+        </ul>
+
+      </nav>
+      <hr>
+
+      <div class="pic_quote">
+
+        <div class="pic">
+          <img src="/artify/images/pic.jpg" alt="pic1">
+        </div>
+
+        <blockquote class="quote">
+          <h4 class="heading">Visions on Canvas: A Gallery Symphony</h4>
+          <p class="para">In the gallery of dreams, brushstrokes compose a symphony of visions on canvas. Each piece whispers stories, inviting you to lose yourself in the melody of colors and find inspiration in the artful dance of imagination.</p>
+        </blockquote>
+
+      </div>
+
+      <div class="pic_quote">
+
+        <blockquote class="quote">
+          <h4 class="heading">Symphony of Visual Poetry</h4>
+          <p class="para">Experience a symphony of visual poetry, where art transcends words. Each piece is a stanza, and the gallery is a poetic sanctuary, inviting you to interpret the verses with your gaze.</p>
+        </blockquote>
+
+        <div class="pic">
+          <img src="/artify/images/pic1.jpg" alt="pic1">
+        </div>
+
+      </div>
+
+      <div class="pic_quote">
+
+        <div class="pic">
+          <img src="/artify/images/pic2.jpg" alt="pic1">
+        </div>
+
+        <blockquote class="quote">
+          <h4 class="heading">Ephemeral Elegance</h4>
+          <p class="para">Unveil the elegance of fleeting moments captured on canvas, where art transcends time. In our gallery, discover a collection that whispers the beauty of impermanence, inviting you to cherish the transient nature of life.</p>
+        </blockquote>
+
+      </div>
+
+      <footer>
+        <p>&copy; 2023 RC. All rights reserved.</p>
+      </footer>
+
+    </div>
+
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>

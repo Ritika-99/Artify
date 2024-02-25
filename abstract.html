@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artify</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/0d5bf31d10.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    
+    <header>
+      <nav class="nav1">
+
+        <div class="logo">
+          <img src="/artify/images/artify-color.png" alt="logo_image">
+        </div>
+
+        <ul>
+          <li class="active"><a href="/artify/src/index.html">Home</a></li>
+          <li><a href="/artify/src/about.html">About</a></li>
+          <li><a href="/artify/src/contact.html">Contact</a></li>
+        </ul>
+
+        <div class="icons">
+          <div class="wishlist-icon" onclick="toggleWishlist()">
+            <i class="fas fa-heart"></i>
+            <span class="wishlist-count" id="wishlist-count">0</span>
+          </div>
+
+          <div class="search">
+            <i class="fas fa-search" id="search-icon"></i>
+            <input type="text" id="search-input" placeholder="Search" class="hidden">
+          </div>
+        </div>
+
+     </nav>
+    </header>
+
+    <div class="art-page">
+        <div class="art-container">
+            <div class="art-item">
+                <img src="/artify/images/abstract/a1.jpg" alt="Abstract Art 1">
+                <div class="description">
+                    <h3>Artwork 1</h3>
+                    <p>A beautiful abstract masterpiece.</p>
+                    <button class="wishlist-btn" onclick="addToWishlist('Artwork 1')">
+                        <i class="fas fa-heart"></i> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+
+            <div class="art-item">
+                <img src="/artify/images/abstract/a2.jpg" alt="Abstract Art 2">
+                <div class="description">
+                    <h3>Artwork 2</h3>
+                    <p>Abstract expression of colors and shapes.</p>
+                    <button class="wishlist-btn" onclick="addToWishlist('Artwork 2')">
+                        <i class="fas fa-heart"></i> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+
+            <div class="art-item">
+                <img src="/artify/images/abstract/a3.jpg" alt="Abstract Art 3">
+                <div class="description">
+                    <h3>Artwork 3</h3>
+                    <p>Abstract expression of colors and shapes.</p>
+                    <button class="wishlist-btn" onclick="addToWishlist('Artwork 3')">
+                        <i class="fas fa-heart"></i> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+
+            <div class="art-item">
+                <img src="/artify/images/abstract/a4.jpg" alt="Abstract Art 4">
+                <div class="description">
+                    <h3>Artwork 4</h3>
+                    <p>Abstract expression of colors and shapes.</p>
+                    <button class="wishlist-btn" onclick="addToWishlist('Artwork 4')">
+                        <i class="fas fa-heart"></i> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+
+            <div class="art-item">
+                <img src="/artify/images/abstract/a5.jpg" alt="Abstract Art 5">
+                <div class="description">
+                    <h3>Artwork 5</h3>
+                    <p>Abstract expression of colors and shapes.</p>
+                    <button class="wishlist-btn" onclick="addToWishlist('Artwork 5')">
+                        <i class="fas fa-heart"></i> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+
+            <div class="art-item">
+                <img src="/artify/images/abstract/a6.jpg" alt="Abstract Art 6">
+                <div class="description">
+                    <h3>Artwork 6</h3>
+                    <p>Abstract expression of colors and shapes.</p>
+                    <button class="wishlist-btn" onclick="addToWishlist('Artwork 6')">
+                        <i class="fas fa-heart"></i> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+
+            <div class="art-item">
+                <img src="/artify/images/abstract/a7.jpg" alt="Abstract Art 7">
+                <div class="description">
+                    <h3>Artwork 7</h3>
+                    <p>Abstract expression of colors and shapes.</p>
+                    <button class="wishlist-btn" onclick="addToWishlist('Artwork 7')">
+                        <i class="fas fa-heart"></i> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+
+            <div class="art-item">
+                <img src="/artify/images/abstract/a8.jpg" alt="Abstract Art 8">
+                <div class="description">
+                    <h3>Artwork 8</h3>
+                    <p>Abstract expression of colors and shapes.</p>
+                    <button class="wishlist-btn" onclick="addToWishlist('Artwork 8')">
+                        <i class="fas fa-heart"></i> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+
+            <div class="art-item">
+                <img src="/artify/images/abstract/a9.jpg" alt="Abstract Art 9">
+                <div class="description">
+                    <h3>Artwork 9</h3>
+                    <p>Abstract expression of colors and shapes.</p>
+                    <button class="wishlist-btn" onclick="addToWishlist('Artwork 9')">
+                        <i class="fas fa-heart"></i> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+
+            <div class="art-item">
+                <img src="/artify/images/abstract/a10.jpg" alt="Abstract Art 10">
+                <div class="description">
+                    <h3>Artwork 10</h3>
+                    <p>Abstract expression of colors and shapes.</p>
+                    <button class="wishlist-btn" onclick="addToWishlist('Artwork 10')">
+                        <i class="fas fa-heart"></i> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+
+            <div class="art-item">
+                <img src="/artify/images/abstract/a11.jpg" alt="Abstract Art 11">
+                <div class="description">
+                    <h3>Artwork 11</h3>
+                    <p>Abstract expression of colors and shapes.</p>
+                    <button class="wishlist-btn" onclick="addToWishlist('Artwork 11')">
+                        <i class="fas fa-heart"></i> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+
+            <div class="art-item">
+                <img src="/artify/images/abstract/a12.jpg" alt="Abstract Art 12">
+                <div class="description">
+                    <h3>Artwork 12</h3>
+                    <p>Abstract expression of colors and shapes.</p>
+                    <button class="wishlist-btn" onclick="addToWishlist('Artwork 12')">
+                        <i class="fas fa-heart"></i> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+
+            <!-- Add more art items as needed -->
+
+        </div>
+    </div>
+
+
+      <footer>
+        <p>&copy; 2023 RC. All rights reserved.</p>
+      </footer>
+
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+:root{
+  font-family: 'Quicksand' sans-serif;
+  min-height: 8ovh;
+  max-width: 1500px;
+  background: linear-gradient(30deg, rgb(100, 241, 84), rgb(92, 92, 229), rgb(111, 30, 30));
+  /*background-color: rgb(255, 255, 255);*/
+  margin: 0 auto;
+}
+
+.nav1{
+  background-color: rgb(205, 204, 204);
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100px;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  width: 56px;
+  height: 56px;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.nav1 ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav1 ul li {
+  padding: 32px 50px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.nav1 ul li.active {
+  color: white;
+}
+
+.nav1 ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav1 ul li a:hover {
+  color: white;
+}
+
+.icons {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  margin-right: 20px;
+  justify-content: space-between;
+  gap: 50px;
+  font-size: 22px;
+}
+
+.wishlist-count {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #e74c3c;
+  color: #fff;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 12px;
+  display:none;
+}
+
+.hidden {
+  display: none;
+  margin: auto;
+}
+
+.page-container{
+  margin-bottom: 20%;
+}
+
+.container {
+  width: 100%;
+  height: 1vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+}
+
+.imgContainer {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  padding-top: 30px;
+  left: 0;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  transition: 1s ;
+  /*background: linear-gradient(30deg, rgb(100, 241, 84), rgb(92, 92, 229), rgb(111, 30, 30));*/
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px 0 30px;
+  
+}
+
+.slide img {
+  position: relative;
+  height: 370px;
+  width: 240px;
+  filter: saturate(10%);
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.button{
+  position: absolute;
+  width: 240px;
+  height: 370px;
+  transition: 0.75;
+  border-radius: 20px;
+}
+
+
+#slider1:target ~ .imgContainer #img1,
+#slider1:target ~ .imgContainer #button1{
+width: 390px;
+height: 600px;
+background-color: transparent;
+filter: saturate (100%);
+}
+
+#slider2:target ~ .imgContainer #img2,
+#slider2:target ~ .imgContainer #button2{
+width: 390px;
+height: 600px;
+background-color: transparent;
+filter: saturate (100%);
+}
+
+#slider3:target ~ .imgContainer #img3,
+#slider3:target ~ .imgContainer #button3{
+width: 390px;
+height: 600px;
+background-color: transparent;
+filter: saturate (100%);
+}
+
+#slider4:target ~ .imgContainer #img4,
+#slider4:target ~ .imgContainer #button4{
+width: 390px;
+height: 600px;
+background-color: transparent;
+filter: saturate (100%);
+}
+
+#slider5:target ~ .imgContainer #img5,
+#slider5:target ~ .imgContainer #button5{
+width: 390px;
+height: 600px;
+background-color: transparent;
+filter: saturate (100%);
+}
+
+.slide:hover img {
+  transform: scale(1.15);
+  filter: saturate(100%);
+}
+
+
+#slider1:target ~ .imgContainer{
+  left: 40%;
+}
+
+#slider2:target ~ .imgContainer{
+  left: 20%;
+}
+
+#slider3:target ~ .imgContainer{
+  left: 0%;
+}
+
+#slider4:target ~ .imgContainer{
+  left: -20%;
+}
+
+#slider5:target ~ .imgContainer{
+  left: -40%;
+} 
+
+
+.nav2{
+  display: flex;
+  flex-direction: row;
+  /*align-items: center;*/
+  margin-top: 1px;
+}
+
+hr {
+  border-color: black;
+}
+
+.nav2 ul {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  gap: 80px;
+  list-style: none;
+  /*background-color: white;*/
+  background-color: transparent;
+}
+
+.nav2 ul li {
+  padding: 15px 44px;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.nav2 ul li a:hover {
+  color: white;
+  border-color: #e74c3c;
+}
+
+.nav2 ul li a {
+color: black; 
+text-decoration: none;
+}
+
+.pic_quote {
+  display: flex;
+  /*background-color: #eeeeee;*/
+  background-color: transparent;
+  width: 100%;
+  height: 700px;
+  padding: 0;
+  margin: 0px;
+  margin-top: 10%;
+}
+
+.pic {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center
+  
+}
+
+.pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+}
+
+.quote {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  padding: 20px;
+}
+
+.heading {
+  font-family: "Crimson Text", serif;
+  font-size: 40px;
+  margin: 0px 0px 20px;
+  font-weight: normal;
+  color: black;
+}
+
+.para {
+  font-family: Helvetica, sans-serif;
+  margin: 0px 0px 20px;
+  font-size: 25px;
+  font-weight: 300;
+  color: black;
+}
+
+.para::before {
+  display: inline-block;
+  content: open-quote;
+  color: black;
+  font-size: 40px;
+}
+
+.para::after {
+  display: inline-block;
+  content: close-quote;
+  color: black;
+  font-size: 30px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.art-page {
+  /* Add any styling specific to the abstract art page */
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.art-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.art-item {
+  margin: 20px;
+  max-width: 300px;
+}
+
+.art-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.description {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.wishlist-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
